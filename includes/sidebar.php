@@ -29,7 +29,7 @@
                 <li>
                     <a href="contactus.php">
                         <span> <i class="fa fa-envelope"></i></span>
-                        <span>Contact Us</span>
+                        <span>Message</span>
                     </a>
                 </li>
 
