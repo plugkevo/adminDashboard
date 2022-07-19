@@ -65,7 +65,18 @@
                         <td> <?php echo $fetchcontactRecord['phonenumber']  ?> </td>
                         <td> <?php echo $fetchcontactRecord['message']  ?> </td>
                         <td> <?php echo $fetchcontactRecord['created_at']  ?> </td>
-                        
+                        <td>
+                            <a href="edit-contactus.php?id=<?php echo $fetchcontactRecord['no']?>" class="btn btn-primary btn-sm">
+                            <i class="fa fa-edit"></i>
+                            </a>
+                            <a href="view-contactus.php?id=<?php echo $fetchcontactRecord['no']?>" class="btn btn-info btn-sm">
+                            <i class="fa fa-eye"></i> 
+                            </a>
+                            <a href="delete-contactus.php?id=<?php echo $fetchcontactRecord['no']?>" class="btn btn-danger btn-sm">
+                            <i class="fa fa-trash"></i> 
+                                
+                            </a>
+                        </td>
       
 
                     </tr>

@@ -2,14 +2,15 @@
 // 1. database connection
 require_once('logics/dbconnection.php');
 $sqlfetchEnrolledStudent= mysqli_query( $conn, 
-"SELECT * FROM enrollment WHERE no='" .$_GET['id']."'");
+"SELECT * FROM contactus WHERE no='" .$_GET['id']."'");
 while($fetchStudent=mysqli_fetch_array( $sqlfetchEnrolledStudent))
 {
-    $fullname=$fetchStudent['fullname'];
+    $firstname=$fetchStudent['firstname'];
+     $lastname= $fetchStudent['lastname'];
     $email= $fetchStudent['email'];
     $phonenumber=$fetchStudent['phonenumber'];
-    $gender=$fetchStudent['gender'];
-    $courses= $fetchStudent['course'];
+    $message=$fetchStudent['message'];
+   
     $enrolledon=$fetchStudent['created_at'];
 }
 ?>
@@ -44,9 +45,10 @@ while($fetchStudent=mysqli_fetch_array( $sqlfetchEnrolledStudent))
                             </div>
                             <div class="card-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item">Fullname:   <span  class="float-end badge bg-primary"><?php echo"$fullname"?></span></li>
-                                    <li class="list-group-item">Email:   <span  class="float-end badge bg-secondary"><?php echo"$email"?></span> </li>
-                                    <li class="list-group-item">Phonenumber:   <span class="float-end badge bg-danger"> <?php echo"$phonenumber"?></span></li>
+                                    <li class="list-group-item">firstname:   <span  class="float-end badge bg-primary"><?php echo "$firstname"?></span></li>
+                                    <li class="list-group-item">lastname:   <span  class="float-end badge bg-primary"><?php echo "$lastname"?></span></li>
+                                    <li class="list-group-item">Email:   <span  class="float-end badge bg-secondary"><?php echo "$email"?></span> </li>
+                                    
                                 </ul>
                             </div>
                             
@@ -60,9 +62,9 @@ while($fetchStudent=mysqli_fetch_array( $sqlfetchEnrolledStudent))
                             </div>
                             <div class="card-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item">Gender:   <span  class="float-end badge bg-primary"><?php echo"$gender"?></span></li>
-                                    <li class="list-group-item">courses:   <span  class="float-end badge bg-secondary"><?php echo"$courses"?></span> </li>
-                                    <li class="list-group-item">Enrolled on:   <span class="float-end badge bg-danger"> <?php echo"$enrolledon"?></span></li>
+                                    <li class="list-group-item">Phonenumber:   <span class="float-end badge bg-danger"> <?php echo "$phonenumber"?></span></li>
+                                    <li class="list-group-item">message:   <span  class="float-end badge bg-secondary"><?php echo "$message"?></span> </li>
+                                    <li class="list-group-item">Enrolled on:   <span class="float-end badge bg-danger"> <?php echo "$enrolledon"?></span></li>
                                 </ul>
                             </div>
                             

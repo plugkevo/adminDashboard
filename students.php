@@ -33,7 +33,8 @@
         <div class="col-lg-12 ">
             <div class="card-header bg-dark text-white text-center"style="height: 50px;" >
                 <span class="align-middle">Students</span>
-                
+                <span class="float-end"><a href="addstudent.php"><button class="btn btn-primary" >Add Student</button>
+                </a></span>
             </div>
             
         </div>
