@@ -32,6 +32,12 @@
                         <span>Message</span>
                     </a>
                 </li>
+                <li>
+                    <a href="subscribe.php">
+                        <span> <i class="fa fa-bell"></i></span>
+                        <span>Message</span>
+                    </a>
+                </li>
 
             </ul>
         </nav>
