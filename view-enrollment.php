@@ -10,7 +10,7 @@ while($fetchStudent=mysqli_fetch_array( $sqlfetchEnrolledStudent))
     $phonenumber=$fetchStudent['phonenumber'];
     $gender=$fetchStudent['gender'];
     $courses= $fetchStudent['course'];
-    $enrolledon=$fetchStudent['created_at'];
+    $enrolledon=$fetchStudent['entered_on'];
 }
 ?>
 
