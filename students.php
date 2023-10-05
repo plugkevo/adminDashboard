@@ -66,7 +66,7 @@
                         <td> <?php echo $fetchEnrollmentRecord['email']  ?> </td>
                         <td> <?php echo $fetchEnrollmentRecord['gender']  ?> </td>
                         <td> <?php echo $fetchEnrollmentRecord['course']  ?> </td>
-                        <td> <?php echo $fetchEnrollmentRecord['created_at']  ?> </td>
+                        <td> <?php echo $fetchEnrollmentRecord['entered_on']  ?> </td>
                         <td>
                             <a href="edit-enrollment.php?id=<?php echo $fetchEnrollmentRecord['no']?>" class="btn btn-primary btn-sm">
                             <i class="fa fa-edit"></i>

@@ -18,9 +18,20 @@
      ?>
 <!DOCTYPE html>
 <html lang="en">
-        <?php
-            require_once('includes/headers.php')
-        ?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Template</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style>
+        .container{
+            margin-left: 7cm;
+        }
+    </style>
+</head>
 <body>
     <!--navbar file-->
     <?php
@@ -31,17 +42,17 @@
     <?php
             require_once('includes/sidebar.php')
         ?>
-         <div class="main-content">    
-        <div class="row">
-            <div class="col-lg-12 ">
-                <div class="card-header bg-dark text-white text-center"style="height: 50px;" >
-                    <span class="align-middle"> Add Students</span>
-                    <a href="students.php"><span class="float-start"><button class="btn btn-danger">Back</button></span></a>
-                    
+        <div class="main-content">    
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="card-header bg-dark text-white text-center"style="height: 50px;" >
+                        <span class="align-middle"> Add Students</span>
+                        <a href="students.php"><span class="float-start"><button class="btn btn-danger">Back</button></span></a>
+                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
     <!-- code for main content -->
